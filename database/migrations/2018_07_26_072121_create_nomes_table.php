@@ -15,7 +15,7 @@ class CreateNomesTable extends Migration
     {
         Schema::create('nomes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nome');
+            $table->string('nome', 500);
             $table->timestamps();
         });
     }
